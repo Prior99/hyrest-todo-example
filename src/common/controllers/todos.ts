@@ -1,11 +1,12 @@
 import { Connection } from "typeorm";
 import { controller, route, body, param, created, ok, notFound } from "hyrest";
+import { component, inject } from "tsdi";
 import { Todo } from "../models";
 import { createTodo, updateTodo, world } from "../scopes";
 
-@controller
+@controller @component
 export class TodosController {
-    private db: Connection;
+    @inject private db: Connection;
 
     @route("POST", "/todos").dump(Todo, world)
     public async create(@body(createTodo) todo: Todo): Promise<Todo> {
