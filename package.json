@@ -7,7 +7,8 @@
   "author": "Frederick Gnodtke",
   "license": "MIT",
   "scripts": {
-    "start:server": "ts-node src/server"
+    "start:server": "ts-node src/server",
+    "start:web": "webpack-dev-server"
   },
   "dependencies": {
     "@types/body-parser": "^1.17.0",
