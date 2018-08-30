@@ -3,6 +3,7 @@ import * as ReactDOM from "react-dom";
 import { TSDI } from "tsdi";
 import { configureController } from "hyrest";
 import { allControllers } from "../common";
+import { List } from "./components";
 
 configureController(allControllers, { baseUrl: "http://localhost:4000" });
 
@@ -11,7 +12,8 @@ tsdi.enableComponentScanner();
 
 ReactDOM.render(
     <div>
-        Hello, world.
+        <h1>Todo List</h1>
+        <List />
     </div>,
     document.getElementById("root"),
 );
