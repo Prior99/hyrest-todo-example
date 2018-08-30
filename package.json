@@ -6,6 +6,9 @@
   "repository": "https://github.com/Prior99/hyrest-todo-example",
   "author": "Frederick Gnodtke",
   "license": "MIT",
+  "scripts": {
+    "start:server": "ts-node src/server"
+  },
   "dependencies": {
     "@types/body-parser": "^1.17.0",
     "@types/node": "^10.9.4",

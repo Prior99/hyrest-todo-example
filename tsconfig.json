@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "lib": ["es2016", "dom"],
+        "emitDecoratorMetadata": true,
+        "sourceMap": true
+    },
+    "include": ["src/"]
+}
